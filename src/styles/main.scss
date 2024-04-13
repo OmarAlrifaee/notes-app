@@ -1,0 +1,8 @@
+@use "./tools-styles/global-rules";
+@use "./pages-style/Notes";
+@use "./pages-style/create-note";
+@use "./pages-style/edit-note";
+@use "./tools-styles/popup";
+body {
+  background-color: #635985;
+}

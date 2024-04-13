@@ -1,0 +1,13 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  text-transform: capitalize;
+  color: red;
+  font: {
+    weight: bold;
+    size: 20px;
+  }
+}
