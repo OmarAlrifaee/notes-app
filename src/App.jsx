@@ -12,7 +12,7 @@ function App() {
   );
   // when ever the data update the useEffect will save the data in localstorage and the initdata will be the localstorage data or an []
   // save the data in localstorag
-  useEffect(() => localStorage.setItem("notes", JSON.stringify(data)), [data]);
+  useEffect(() => localStorage.setItem("notes", JSON.stringify(data)));
   return (
     <Routes>
       <Route
