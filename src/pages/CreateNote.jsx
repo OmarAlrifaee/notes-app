@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import { useState } from "react";
 import EmptyInputPopup from "../components/EmptyInputPopup";
-
+import "../styles/pages-style/create-note.scss";
 const CreateNote = ({ setData, data }) => {
   const [value, setValue] = useState({ title: "", details: "" }),
     navigate = useNavigate(),

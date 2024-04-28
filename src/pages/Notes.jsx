@@ -1,8 +1,10 @@
 import { IoMdSearch, IoIosAddCircle } from "react-icons/io";
 import { FaCircleXmark } from "react-icons/fa6";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NoteItem from "../components/NoteItem";
+import "../styles/pages-style/Notes.scss";
 const Notes = ({ data }) => {
   const [searching, setSearching] = useState(false),
     [searchValue, setSearchValue] = useState("");
@@ -33,17 +35,11 @@ const Notes = ({ data }) => {
           {data
             .filter(({ title }) => title.includes(searchValue))
             .map((note) => (
-              <NoteItem
-                note={note}
-                key={note.id}
-              />
+              <NoteItem note={note} key={note.id} />
             ))}
         </ul>
       </main>
-      <Link
-        to={"/create-note"}
-        className="add-notes-link"
-      >
+      <Link to={"/create-note"} className="add-notes-link">
         <IoIosAddCircle />
       </Link>
     </section>

@@ -4,6 +4,7 @@ import { MdDelete } from "react-icons/md";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import EmptyInputPopup from "../components/EmptyInputPopup";
+import "../styles/pages-style/edit-note.scss";
 const EditNote = ({ data, setData }) => {
   const [value, setValue] = useState({ title: "", details: "" }), // to control the inputs
     [popup, setPopup] = useState(false),
@@ -59,16 +60,10 @@ const EditNote = ({ data, setData }) => {
         <Link to={"/"}>
           <IoIosArrowBack />
         </Link>
-        <button
-          className="save-btn"
-          onClick={hundleSave}
-        >
+        <button className="save-btn" onClick={hundleSave}>
           Save
         </button>
-        <button
-          className="delete-btn"
-          onClick={hundleDelete}
-        >
+        <button className="delete-btn" onClick={hundleDelete}>
           <MdDelete />
         </button>
       </header>

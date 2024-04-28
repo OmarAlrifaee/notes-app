@@ -1,8 +1,10 @@
-@use "./tools-styles/global-rules";
-@use "./pages-style/Notes";
-@use "./pages-style/create-note";
-@use "./pages-style/edit-note";
-@use "./tools-styles/popup";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 body {
   background-color: #635985;
 }
